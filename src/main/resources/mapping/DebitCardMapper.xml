@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.internetbank.yby.debit_card.mapper.DebitCardMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.internetbank.yby.debit_card.entity.DebitCard">
+        <id column="card_number" property="cardNumber" />
+        <result column="uNo" property="uNo" />
+        <result column="bank" property="bank" />
+        <result column="tra_password" property="traPassword" />
+        <result column="res_password" property="resPassword" />
+        <result column="money" property="money" />
+        <result column="money_limit" property="moneyLimit" />
+        <result column="state" property="state" />
+        <result column="point" property="point" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        uNo, bank, card_number, tra_password, res_password, money, money_limit, state, point
+    </sql>
+
+</mapper>
